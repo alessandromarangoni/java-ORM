@@ -12,6 +12,12 @@ import static javax.persistence.AccessType.PROPERTY;
  *
  */
 @Entity
+@NamedQueries({
+@NamedQuery(query = "Select e from Employee e where e.eid = :id", name = "find employee by id"),
+@NamedQuery(query = "Select max(e.salary) from Employee e ", name = "find max salary from employee")
+})
+
+
 public class Employee implements Serializable {
 
 	@Id
