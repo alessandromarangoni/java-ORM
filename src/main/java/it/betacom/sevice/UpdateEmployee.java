@@ -15,8 +15,9 @@ public class UpdateEmployee {
     // dopo aver ottenuto il manager apriamo la trasazione
         entityManager.getTransaction().begin();
     
-        Employee employee = entityManager.find(Employee.class, 2);
-        entityManager.remove(employee);
+        Employee employee = entityManager.find(Employee.class, 1);
+        employee.setSalary(2500);
+        
         entityManager.getTransaction().commit();
         entityManager.close();
         emFactory.close();

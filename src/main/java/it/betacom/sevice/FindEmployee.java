@@ -12,7 +12,7 @@ public static void main(String[] args) {
 		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("jpaProject");
         EntityManager entityManager = emFactory.createEntityManager();
     // dopo aver ottenuto il manager apriamo la trasazione
-        Employee employee = entityManager.find(Employee.class, 2);
+        Employee employee = entityManager.find(Employee.class, 1);
         System.out.println(employee.toString());
         entityManager.close();
         emFactory.close();

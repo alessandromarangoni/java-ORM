@@ -15,8 +15,7 @@ public class DeleteEmployee {
         entityManager.getTransaction().begin();
         
         Employee employee = entityManager.find(Employee.class, 2);
-        employee.setSalary(2500);
-        
+        entityManager.remove(employee);
         entityManager.getTransaction().commit();
         entityManager.close();
         emFactory.close();
