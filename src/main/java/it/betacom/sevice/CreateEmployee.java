@@ -20,7 +20,7 @@ public class CreateEmployee {
 
         // Creazione di un oggetto Employee e impostazione dei suoi attributi
         Employee employee = new Employee();
-        employee.setEname("Maria");
+        employee.setEname("gianni");
         employee.setSalary(2000);
         employee.setDeg("Java Developer");
 
@@ -29,7 +29,7 @@ public class CreateEmployee {
 
         // Creazione di un altro oggetto Employee e impostazione dei suoi attributi
         Employee employee2 = new Employee();
-        employee2.setEname("Sergio");
+        employee2.setEname("mario");
         employee2.setSalary(2100);
         employee2.setDeg("Php Developer");
 
